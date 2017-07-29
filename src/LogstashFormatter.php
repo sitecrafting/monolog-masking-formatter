@@ -13,29 +13,18 @@ class LogstashFormatter extends Monolog\Formatter\LogstashFormatter {
   protected $mask;
   protected $maskedFields;
 
-  public function __construct(
-    $maskedFields,
-    $mask,
-    $applicationName,
-    $systemName = null,
-    $extraPrefix = null,
-    $contextPrefix = 'ctxt_'
-  ) {
-    $this->maskedFields = $maskedFields;
-    $this->mask = $mask;
-
-    parent::__construct(
-      $applicationName,
-      $systemName,
-      $extraPrefix,
-      $contextPrefix
-    );
-  }
-
   public function format(array $record) {
     $record = $this->maskRecord($record);
 
     return parent::format($record);
+  }
+
+  public function maskFields(array $fields) {
+    $this->maskedFields = $fields;
+  }
+
+  public function setMask($mask) {
+    $this->mask = '********';
   }
 
   public function maskRecord($record) {

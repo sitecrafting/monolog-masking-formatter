@@ -13,6 +13,6 @@
     ],
     "minimum-stability": "stable",
     "psr-4": {
-      "MaskingFormatter\\": "src"
+      "MaskingFormatter\\": "src/"
     }
 }
