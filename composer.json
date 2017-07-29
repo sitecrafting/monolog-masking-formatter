@@ -1,0 +1,18 @@
+{
+    "name": "sitecrafting/monolog-masking-formatter",
+    "description": "Mask sensitive info in Monolog/Logstash entries",
+    "type": "library",
+    "require": {
+        "monolog/monolog": "^1.22"
+    },
+    "authors": [
+        {
+            "name": "Coby Tamayo",
+            "email": "ctamayo@sitecrafting.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "psr-4": {
+      "MaskingFormatter\\": "src"
+    }
+}
