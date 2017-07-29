@@ -2,6 +2,8 @@
 
 namespace MaskingFormatter;
 
+use Monolog\Formatter\LogstashFormatter as MonologLogstashFormatter;
+
 /**
  * Masking formatter for Logstash
  *
@@ -9,7 +11,7 @@ namespace MaskingFormatter;
  * @author    Coby Tamayo <ctamayo@sitecrafting.com>
  * @package   MaskingFormatter
  */
-class LogstashFormatter extends Monolog\Formatter\LogstashFormatter {
+class LogstashFormatter extends MonologLogstashFormatter {
   protected $mask;
   protected $maskedFields;
 
