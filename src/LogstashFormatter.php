@@ -26,7 +26,7 @@ class LogstashFormatter extends MonologLogstashFormatter {
   }
 
   public function setMask($mask) {
-    $this->mask = '********';
+    $this->mask = $mask;
   }
 
   public function maskRecord($record) {
