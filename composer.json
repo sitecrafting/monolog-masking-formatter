@@ -12,7 +12,9 @@
         }
     ],
     "minimum-stability": "stable",
-    "psr-4": {
-      "MaskingFormatter\\": "src/"
+    "autoload": {
+      "psr-4": {
+        "MaskingFormatter\\": "src/"
+      }
     }
 }
