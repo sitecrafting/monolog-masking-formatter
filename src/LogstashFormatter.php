@@ -15,16 +15,27 @@ class LogstashFormatter extends MonologLogstashFormatter {
   protected $mask;
   protected $maskedFields;
 
+  /**
+   * @inheritdoc
+   */
   public function format(array $record) {
     $record = $this->maskRecord($record);
 
     return parent::format($record);
   }
 
+  /**
+   * Indicate which keys the formatter should recursively search for and mask.
+   * @param array $fields an array of keys (strings) whose values to mask
+   */
   public function maskFields(array $fields) {
     $this->maskedFields = $fields;
   }
 
+  /**
+   * Set the mask string to use in log files
+   * @param string $mask the mask to use to replace sensitive strings
+   */
   public function setMask($mask) {
     $this->mask = $mask;
   }
