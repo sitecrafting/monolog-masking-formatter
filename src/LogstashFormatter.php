@@ -11,7 +11,7 @@ use Monolog\Formatter\LogstashFormatter as MonologLogstashFormatter;
  * @author    Coby Tamayo <ctamayo@sitecrafting.com>
  * @package   MaskingFormatter
  */
-class LogstashFormatter extends MonologLogstashFormatter {
+class LogstashFormatter extends MonologLogstashFormatter implements MaskingFormatterInterface {
   use MasksFieldsTrait;
 }
 

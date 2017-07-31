@@ -11,7 +11,7 @@ use Monolog\Formatter\LineFormatter as MonologLineFormatter;
  * @author    Coby Tamayo <ctamayo@sitecrafting.com>
  * @package   MaskingFormatter
  */
-class LineFormatter extends MonologLineFormatter {
+class LineFormatter extends MonologLineFormatter implements MaskingFormatterInterface {
   use MasksFieldsTrait;
 }
 
