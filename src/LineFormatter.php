@@ -2,16 +2,16 @@
 
 namespace MaskingFormatter;
 
-use Monolog\Formatter\LogstashFormatter as MonologLogstashFormatter;
+use Monolog\Formatter\LineFormatter as MonologLineFormatter;
 
 /**
- * Masking formatter for Logstash
+ * Masking formatter for simple flat-file line format
  *
  * @copyright 2017 SiteCrafting, Inc.
  * @author    Coby Tamayo <ctamayo@sitecrafting.com>
  * @package   MaskingFormatter
  */
-class LogstashFormatter extends MonologLogstashFormatter {
+class LineFormatter extends MonologLineFormatter {
   use MasksFieldsTrait;
 }
 
