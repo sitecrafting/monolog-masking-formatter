@@ -29,7 +29,7 @@ class LogstashFormatter extends MonologLogstashFormatter {
     $this->mask = $mask;
   }
 
-  public function maskRecord($record) {
+  protected function maskRecord($record) {
     if (is_object($record) or is_array($record)) {
       foreach ($record as $key => &$value) {
         if (is_object($value) or is_array($value)) {
