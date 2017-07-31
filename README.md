@@ -2,7 +2,7 @@
 
 Library for masking sensitive info in Monolog.
 
-Currently only Logstash format is supported.
+Currently only `LineFormatter` (the Monolog default) and Logstash formats are supported.
 
 ## Usage
 
