@@ -44,7 +44,7 @@ trait MasksFieldsTrait {
         if (is_object($value) or is_array($value)) {
           // recurse down the iterable tree
           $value = $this->maskRecord($value);
-        } elseif (in_array($key, $this->maskedFields)) {
+        } elseif (in_array($key, $this->maskedFields, true)) {
           // replace sensitive string value
           $value = $this->mask;
         }
