@@ -42,3 +42,8 @@ Add the private repo and require the library
 ```
 
 Then just run `composer install` or `composer udpate` per usual.
+
+## License
+
+MIT
+
