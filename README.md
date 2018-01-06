@@ -30,7 +30,7 @@ The best way is to install via composer:
 
 ```json
 {
-  "require" {
+  "require": {
     "sitecrafting/monolog-masking-formatter": "dev-master"
   }
 }
