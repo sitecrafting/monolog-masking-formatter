@@ -33,7 +33,7 @@ Add the private repo and require the library
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:sitecrafting/monolog-masking-formatter.git"
+      "url": "git@github.com:sitecrafting/monolog-masking-formatter.git"
     }
   ],
   "sitecrafting/monolog-masking-formatter"
