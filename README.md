@@ -38,6 +38,11 @@ The best way is to install via composer:
 
 Then just run `composer install` or `composer udpate` per usual.
 
+## TODO
+
+* Other formats
+* Tests
+
 ## License
 
 MIT
