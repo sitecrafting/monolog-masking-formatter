@@ -26,18 +26,13 @@ $handler->setFormatter($formatter);
 
 ## Installation
 
-Add the private repo and require the library
+The best way is to install via composer:
 
 ```json
 {
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:sitecrafting/monolog-masking-formatter.git"
-    }
-  ],
-  "sitecrafting/monolog-masking-formatter"
-  ...
+  "require" {
+    "sitecrafting/monolog-masking-formatter": "dev-master"
+  }
 }
 ```
 
